@@ -1,0 +1,31 @@
+<div class="col-md-6 offset-md-3">
+    <h1>Obtener condiciones del tiempo desde Open Weather Map API</h1>
+    <!--
+    <div class="card-body">
+        {{#if contacts}}
+            <ul class='list-group'>
+            {{#each contacts}}
+                <li class='list-group-item d-flex justify-content-between align-items-center'>
+                    {{firstname}} 
+                    {{lastname}} /
+                    {{email}} /
+                    {{phone}}
+                    <a href='/delete-contact/{{@key}}' class='btn btn-danger'>Delete</a>
+                </li>
+            {{/each}}
+            </ul>
+        {{else}}
+            <p>No contacts yet</p>
+        {{/if}}
+    </div>
+    -->
+    <form action='/tiempo' method="POST">
+        <div class="form-group">
+            <label for="ciudad">Escribe una ciudad</label>
+            <input type='text' name='ciudad' placeholder='Ej. Monterrey' class='form-control' required>
+        </div>
+        <button class='btn btn-primary btn-block'>
+            Mostrar el tiempo
+        </button>
+    </form>
+</div>
